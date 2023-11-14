@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://openaigptguide.com/openai-gpts-hunter/</loc>
+    
+    <lastmod>2023-11-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://openaigptguide.com/404.html</loc>
+    
+    <lastmod>2023-11-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://openaigptguide.com/openai-gpt5/</loc>
     
     <lastmod>2023-11-14</lastmod>
@@ -21,15 +39,6 @@
   
   <url>
     <loc>https://openaigptguide.com/openai-services-are-not-available-in-your-country/</loc>
-    
-    <lastmod>2023-11-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://openaigptguide.com/404.html</loc>
     
     <lastmod>2023-11-14</lastmod>
     
