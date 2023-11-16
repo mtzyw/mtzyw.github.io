@@ -1,3 +1,4 @@
+https://openaigptguide.com/openai-how-to-use-gpt4/
 https://openaigptguide.com/openai-gpts-hunter/
 https://openaigptguide.com/404.html
 https://openaigptguide.com/openai-gpt5/
@@ -8,6 +9,7 @@ https://openaigptguide.com/tags/%E5%85%B1%E4%BA%AB/
 https://openaigptguide.com/tags/%E8%B4%A6%E5%8F%B7/
 https://openaigptguide.com/tags/%E5%AF%86%E9%92%A5/
 https://openaigptguide.com/tags/%E8%B5%84%E8%AE%AF/
+https://openaigptguide.com/tags/%E6%95%99%E7%A8%8B/
 https://openaigptguide.com/categories/OpenAI/
 https://openaigptguide.com/categories/OpenAI/GPT4/
 https://openaigptguide.com/categories/OpenAI/ChatGPT/
