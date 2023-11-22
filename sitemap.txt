@@ -1,3 +1,4 @@
+https://openaigptguide.com/openai-dall-e-painting-guide/
 https://openaigptguide.com/openai-recharge-guide/
 https://openaigptguide.com/openai-bind-credit-cards-guide/
 https://openaigptguide.com/openai-api-using-guide/
@@ -45,6 +46,9 @@ https://openaigptguide.com/tags/OpenAI%E8%B4%AD%E4%B9%B0/
 https://openaigptguide.com/tags/OpenAI%E8%B4%A6%E5%8F%B7/
 https://openaigptguide.com/tags/OpenAI%E6%B3%A8%E5%86%8C/
 https://openaigptguide.com/tags/OpenAI%E7%99%BB%E5%BD%95/
+https://openaigptguide.com/tags/OpenAI%E7%BB%98%E5%9B%BE/
+https://openaigptguide.com/tags/OpenAI%E7%94%BB%E5%9B%BE/
+https://openaigptguide.com/tags/OpenAI%E5%B7%A5%E5%85%B7/
 https://openaigptguide.com/categories/OpenAI/
 https://openaigptguide.com/categories/OpenAI/GPT4/
 https://openaigptguide.com/categories/OpenAI/ChatGPT/

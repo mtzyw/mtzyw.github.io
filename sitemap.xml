@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://openaigptguide.com/openai-dall-e-painting-guide/</loc>
+    
+    <lastmod>2023-11-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://openaigptguide.com/openai-recharge-guide/</loc>
     
     <lastmod>2023-11-22</lastmod>
@@ -361,6 +370,27 @@
   
   <url>
     <loc>https://openaigptguide.com/tags/OpenAI%E7%99%BB%E5%BD%95/</loc>
+    <lastmod>2023-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://openaigptguide.com/tags/OpenAI%E7%BB%98%E5%9B%BE/</loc>
+    <lastmod>2023-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://openaigptguide.com/tags/OpenAI%E7%94%BB%E5%9B%BE/</loc>
+    <lastmod>2023-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://openaigptguide.com/tags/OpenAI%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2023-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
