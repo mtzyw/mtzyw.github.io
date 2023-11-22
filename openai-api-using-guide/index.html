@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>OpenAI API 使用最全指南（快速入门） | OpenAI &amp; GPT 中文指南</title>
+
+    <meta name="description" content="&lt;p&gt;OpenAI API 是 OpenAI 的问题生成 API，它提供对 Ukrainian Chamber of Commerce and Industry(UCCI) 的问题信息的查询和分析。要写快速入门的简体中文指南，需要了解 API 的用法。正确使用之前，需要先注册 API 弹窗并获取 API 授权。重要的常用的 API 分析指针包括：&lt;/p&gt;">
+    <link rel="canonical" href="https://openaigptguide.com/openai-api-using-guide/"/>
+    <meta name="keywords" content="OpenAI,GPT,GPT-4,GPTs,GPT4">
+
+
+    
+
+    <meta property="og:locale" content="cn" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content= "OpenAI API 使用最全指南（快速入门） | OpenAI &amp; GPT 中文指南"  />
+    <meta property="og:description" content= "&lt;p&gt;OpenAI API 是 OpenAI 的问题生成 API，它提供对 Ukrainian Chamber of Commerce and Industry(UCCI) 的问题信息的查询和分析。要写快速入门的简体中文指南，需要了解 API 的用法。正确使用之前，需要先注册 API 弹窗并获取 API 授权。重要的常用的 API 分析指针包括：&lt;/p&gt;" />
+    <meta property="og:url" content="https://openaigptguide.com/openai-api-using-guide/index.html" />
+    <meta property="og:site_name" content="" />
+    <meta property="article:author" content="John Doe" />
+    <meta property="article:publisher" content="" />
+    <meta property="og:description" content="&lt;p&gt;OpenAI API 是 OpenAI 的问题生成 API，它提供对 Ukrainian Chamber of Commerce and Industry(UCCI) 的问题信息的查询和分析。要写快速入门的简体中文指南，需要了解 API 的用法。正确使用之前，需要先注册 API 弹窗并获取 API 授权。重要的常用的 API 分析指针包括：&lt;/p&gt;" />
+    <meta name="twitter:title" content="OpenAI API 使用最全指南（快速入门） | OpenAI &amp; GPT 中文指南"/>
+    <meta name="twitter:description" content="&lt;p&gt;OpenAI API 是 OpenAI 的问题生成 API，它提供对 Ukrainian Chamber of Commerce and Industry(UCCI) 的问题信息的查询和分析。要写快速入门的简体中文指南，需要了解 API 的用法。正确使用之前，需要先注册 API 弹窗并获取 API 授权。重要的常用的 API 分析指针包括：&lt;/p&gt;"/>
+    <script type="application/ld+json">
+        {
+            "description": "&lt;p&gt;OpenAI API 是 OpenAI 的问题生成 API，它提供对 Ukrainian Chamber of Commerce and Industry(UCCI) 的问题信息的查询和分析。要写快速入门的简体中文指南，需要了解 API 的用法。正确使用之前，需要先注册 API 弹窗并获取 API 授权。重要的常用的 API 分析指针包括：&lt;/p&gt;",
+            "author": { "@type": "Person", "name": "John Doe" },
+            "@type": "BlogPosting",
+            "url": "https://openaigptguide.com/openai-api-using-guide/index.html",
+            "publisher": {
+            "@type": "Organization",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://openaigptguide.comundefined"
+            },
+            "name": "John Doe"
+            },
+            "headline": "OpenAI API 使用最全指南（快速入门） | OpenAI &amp; GPT 中文指南",
+            "datePublished": "2023-11-21T18:41:53.000Z",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://openaigptguide.com/openai-api-using-guide/index.html"
+            },
+            "@context": "http://schema.org"
+        }
+    </script>
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=1654266144177.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=1654266144177.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = true
+        window.aomori_search_algolia = false
+
+    </script>
+
+    <!-- Google 广告 AdSense 代码 -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3672455877501055" crossorigin="anonymous">
+    </script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <div id="typed-strings" style="display:none">
+                        <p>OpenAI &amp; GPT 中文指南</p>
+                    </div>
+                    <a class="header-type-title" id="typed" href="/"></a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">首页</a>
+                
+                <a href="/categories">分类</a>
+                
+                <a href="/archives">存档</a>
+                
+                <a href="/about">关于</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">首页</a>
+                    
+                    <a href="/categories">分类</a>
+                    
+                    <a href="/archives">存档</a>
+                    
+                    <a href="/about">关于</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-clp9elshu00070djrd80j25es" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      OpenAI API 使用最全指南（快速入门）
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2023-11-21T18:41:53.000Z" itemprop="datePublished">2023-11-22</time>
+</div>
+
+            
+            <div class="article-category">
+                <a class="article-category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+            </div>
+            
+
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ChatGPT/" rel="tag">ChatGPT</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OpenAI/" rel="tag">OpenAI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OpenAI-API-OpenAI-API%E4%BD%BF%E7%94%A8/" rel="tag">OpenAI API, OpenAI API使用</a></li></ul>
+            </div>
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+
+        <a target="_blank" style="color:blue" rel="noopener" href="http://aa.nsjiasu.com/details/2D1BB2BC">🔥🔥 点击领取海外原装 ChatGPT 正版账号：http://aa.nsjiasu.com/details/2D1BB2BC</a>
+
+            <p>OpenAI API 是 OpenAI 的问题生成 API，它提供对 Ukrainian Chamber of Commerce and Industry(UCCI) 的问题信息的查询和分析。要写快速入门的简体中文指南，需要了解 API 的用法。正确使用之前，需要先注册 API 弹窗并获取 API 授权。重要的常用的 API 分析指针包括：</p>
+<span id="more"></span>
+
+<p><img src="https://images.unsplash.com/photo-1653060940931-181ea4308118?ixid=M3wyNDg5OTF8MHwxfHNlYXJjaHwxfHxPcGVuQUlBUEklMkNPcGVuQUlBUEklRTQlQkQlQkYlRTclOTQlQTh8ZW58MHx8fHwxNzAwNjM1MzIzfDA&ixlib=rb-4.0.3" alt="OpenAIAPI,OpenAIAPI使用"></p>
+<ol>
+<li>概述信息：获取 registration ID, statistic, and countries. 这些信息可用于了解 UCCI 的总对象，成员数和国家分布。</li>
+<li>分析方法：使用 analysis method 可以对 UCCI 的问题进行分析，我们可以在 config 中设置分析方法，支持的分析方法包括：</li>
+</ol>
+<ul>
+<li>Classification analysis<br>如果只希望按照分类来进行分析，可以使用该分析方法，支持的分类包括:<ul>
+<li>报告的问题</li>
+<li>担心</li>
+<li>报告者的建议</li>
+<li>意见报告</li>
+</ul>
+</li>
+<li>比较分析<ul>
+<li>基于国家的比较</li>
+<li>基于响应性关注的比较</li>
+<li>注册趋势</li>
+<li>举报案例</li>
+</ul>
+</li>
+</ul>
+<p>通过以下步骤，您可以有效地利用 OpenAI API 快速、轻松地获取您所需的 UCCI 信息，并根据该信息有效地制定自己的见解和策略。</p>
+<h2 id="OpenAI-ChatGPT账号创建与登录"><a href="#OpenAI-ChatGPT账号创建与登录" class="headerlink" title="OpenAI ChatGPT账号创建与登录"></a>OpenAI ChatGPT账号创建与登录</h2><p>以下是简elerпол的回答：</p>
+<ol>
+<li>OpenAI API是否需要Separate OpenAI ChatGPT 账号？<br>OpenAI API可以相自使用，但是，需要使用同一个OpenAI 聊天GPT 的连接,因为此为创建对象的指定的账号。</li>
+<li>OpenAI ChatGPT 指定的连接因此而意味着 ethnicity, name 等信息是否记录在Connntection 中？<br>不需要特别记录ethnicity, name 等信息到 Connection。</li>
+<li>即使使用同一个与您使用过 advised，可以创建不同的 Chat 收件人吗？<br>用 advised 创建的 Chat 收件人因此而需要用相同的 Connection。</li>
+</ol>
+<h2 id="设置环境"><a href="#设置环境" class="headerlink" title="设置环境"></a>设置环境</h2><p>术语“OpenAIAPI”可能是指 OpenAI 提供的用于访问其语言模型和其他人工智能工具的 API（应用程序编程接口）。 “使用环境”点可能是指API可以在某些编程或应用程序环境中使用来执行诸如翻译文本、生成文本或分析数据等任务。</p>
+<h2 id="将-OpenAI-API-密钥设置为环境变量"><a href="#将-OpenAI-API-密钥设置为环境变量" class="headerlink" title="将 OpenAI API 密钥设置为环境变量"></a>将 OpenAI API 密钥设置为环境变量</h2><p>对，那是正确的。</p>
+<p>问题：如何在OpenAIAPI中设置环境变量？</p>
+<p>答：要在OpenAIAPI中设置环境变量，您需要将OpenAI API密钥设置为环境变量。</p>
+<p>说明：使用 OpenAIAPI 时，建议确保您的 API 密钥安全，不要在代码中暴露。 将 API 密钥设置为环境变量允许您将其与代码分开管理，并且您可以轻松更改环境变量，而无需编辑代码。 要设置环境变量，可以使用以下命令：</p>
+<pre><code class="python">import os
+os.environ[&quot;OPENAI_API_KEY&quot;] = &quot;your_api_key_here&quot;
+</code></pre>
+<p>确保将 <code>your_api_key_here</code> 替换为您的实际 API 密钥。 这将为当前进程设置环境变量，您可以使用 os.environ[“OPENAI_API_KEY”]&#96; 访问代码中的 API 密钥。</p>
+<h2 id="安装-OpenAI-API"><a href="#安装-OpenAI-API" class="headerlink" title="安装 OpenAI API"></a>安装 OpenAI API</h2><p>知识问题问题：OpenAIAPI 使用方法</p>
+<p>解决方案：</p>
+<ol>
+<li><p>前提：您已有OpenAI 科技公司的 API 密钥。</p>
+</li>
+<li><p>接下来，您需要使用OpenAI API 发送两个请求：</p>
+<ol>
+<li>记录您可以处理的最大数量的请求，保存在变量 “max_batch” 中</li>
+<li>记录您每次请求 “max_batch” 的请求的第一部分（前1000个查询）保存在变量 “startest_sequence_ids” 中</li>
+</ol>
+</li>
+<li><p>使用以下方式（使用 PyTorch Hub API 作为例子）来发送请求：</p>
+</li>
+</ol>
+<pre><code class="lua">import torch.hub
+from torchvision.datasets.coco import COCO
+
+# Replace the following with your API key
+openai_api_key = &quot;sk-cscv3jk3sdkuv9@chappa3&quot;
+
+# Define maximum batch size
+max_batch = 1000
+
+# Get each sequence&#39;s IDs up to the maximum batch size
+startest_sequence_ids = [x[4] for x in openai_api_key.split(&#39;;&#39;)[:max_batch]]
+
+# Use the OpenAI API to send requests to the batch of sequence IDs
+response_sequence_ids = openai_api_key.split(&#39;;&#39;)[max_batch: -max_batch + len(startest_sequence_ids)]
+
+# Extract the desired data from the response for each sequence
+# This assumes that the data is in the form of a JSON dictionary
+# Several keys may be required, such as &#39;id&#39;, &#39;title&#39;, &#39;description&#39;, etc.
+data = [response_sequence_ids[i][1] for i in range(max_batch - len(startest_sequence_ids) + len(response_sequence_ids))]
+</code></pre>
+<ol start="4">
+<li>将步骤3中还未处理的数据发送一次请求。</li>
+</ol>
+<p>酷割合注意事项：</p>
+<ul>
+<li>OpenAI API 的 consumed API calls 与 API 密钥相关，因此您可能会在发送请求后uelimit 状态下出现问题。为了避免这种情况发生，您可以在每次请求之后调用API限制接口请求次数 API 方法来获取标识您已本次请求超出连续请求次数限制的标志。</li>
+<li>OpenAI API 的终止topic 和 模型名字可能会在您发现问题时改变，因此您应该在每次请求前判断接口状态，并更新您的 API 下载链接或 OpenAI API 密钥。</li>
+</ul>
+<h2 id="编写聊天助手代码"><a href="#编写聊天助手代码" class="headerlink" title="编写聊天助手代码"></a>编写聊天助手代码</h2><p>OpenAIAPI 是一种编写聊天助手代码的接口，它提供了一系列 API ，与人工智能技术相关，例如语言模型、元数据提取、 denied的内容包含的关键词之类。</p>
+<p>可以平 opportunely 使用这些 api，例如使用文本生成器来创建聊天朋友的回答，或使用语言模型处理用户的问题和回答,并且在我们Need Help?（你需要帮助吗？）和Cancel Prompt（取消提示）等情况下进行确定。</p>
+<h2 id="运行代码"><a href="#运行代码" class="headerlink" title="运行代码"></a>运行代码</h2><p>OpenAI API（Open AI API）是一种语言模型API，它使用最新最先进的机器学习模型来生成类似人类的文本并响应查询。 它允许开发者和用户与人工智能助手交互并执行各种任务，例如文本分类、语言翻译和知识搜索。</p>
+<h2 id="格式化输出"><a href="#格式化输出" class="headerlink" title="格式化输出"></a>格式化输出</h2><p>OpenAI API 是使用给定输入和语言模型进行文本生成的接口。它可以使用格式化输出，不过需要提前配置这样的设置。具体来说，如果您想要使用格式化输出，可以通过启用”log_file_mode”选项，并指定输出路径和日志类型来配置。然后，当您调用 API 时，会输出到这个文件中。具体流程如下：</p>
+<ol>
+<li>要使用格式化输出，先启用“log_file_mode”选项，然后指定输出路径和日志类型。</li>
+<li>调用 API 转入语言模型。</li>
+<li>调用 OpenAI 接口。</li>
+<li>输出到文件中。</li>
+</ol>
+
+        
+        <a target="_blank" style="color:blue" rel="noopener" href="http://aa.nsjiasu.com/details/2D1BB2BC">🔥🔥 点击领取海外原装 ChatGPT 正版账号：http://aa.nsjiasu.com/details/2D1BB2BC</a>
+
+        </div>
+
+    </div>
+
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-cate">
+    <div class="widget-title"><span>Categories</span></div>
+    <div class="widget-inner">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/OpenAI/">OpenAI</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OpenAI/ChatGPT/">ChatGPT</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/OpenAI/GPT4/">GPT4</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/OpenAI/GPT5/">GPT5</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%B5%84%E8%AE%AF/">资讯</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-tags">
+    <div class="widget-title"><span>Tags</span></div>
+    <div class="widget-inner">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT/" rel="tag">ChatGPT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT-App/" rel="tag">ChatGPT App</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E6%89%8B%E6%9C%BA%E7%89%88/" rel="tag">ChatGPT手机版</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Grok-AI/" rel="tag">Grok AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI/" rel="tag">OpenAI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI-API/" rel="tag">OpenAI API</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI-API-Key/" rel="tag">OpenAI API Key</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI-API-Key%E5%85%85%E5%80%BC/" rel="tag">OpenAI API Key充值</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI-API-Key%E8%B4%AD%E4%B9%B0/" rel="tag">OpenAI API Key购买</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI-API-OpenAI-API%E4%BD%BF%E7%94%A8/" rel="tag">OpenAI API, OpenAI API使用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI-API%E4%BD%BF%E7%94%A8/" rel="tag">OpenAI API使用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI-Translator/" rel="tag">OpenAI Translator</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E4%B8%8B%E8%BD%BD/" rel="tag">OpenAI下载</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E5%85%85%E5%80%BC/" rel="tag">OpenAI充值</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E6%89%8B%E6%9C%BA%E7%89%88/" rel="tag">OpenAI手机版</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E6%B3%A8%E5%86%8C/" rel="tag">OpenAI注册</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E7%99%BB%E5%BD%95/" rel="tag">OpenAI登录</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E7%BB%91%E5%8D%A1/" rel="tag">OpenAI绑卡</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E7%BF%BB%E8%AF%91/" rel="tag">OpenAI翻译</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E7%BF%BB%E8%AF%91%E5%B7%A5%E5%85%B7/" rel="tag">OpenAI翻译工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E8%B4%A6%E5%8F%B7/" rel="tag">OpenAI账号</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E8%B4%AD%E4%B9%B0/" rel="tag">OpenAI购买</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" rel="tag">人工智能</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%B1%E4%BA%AB/" rel="tag">共享</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/" rel="tag">大语言模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AF%86%E9%92%A5/" rel="tag">密钥</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B4%A6%E5%8F%B7/" rel="tag">账号</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B5%84%E8%AE%AF/" rel="tag">资讯</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Featured Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/grok-ai/">Grok AI：来自马斯克旗下人工智能公司xAI的大语言模型</a>
+          </li>
+        
+          <li>
+            <a href="/how-to-use-openai-translator/">OpenAI Translator怎么使用？OpenAI翻译工具下载使用教程</a>
+          </li>
+        
+          <li>
+            <a href="/openai-founder/">OpenAI 创始人是谁？ OpenAI 创始团队介绍</a>
+          </li>
+        
+          <li>
+            <a href="/openai-recharge-guide/">OpenAI充值指南 - OpenAI API密钥怎么充值详解</a>
+          </li>
+        
+          <li>
+            <a href="/openai-bind-credit-cards-guide/">OpenAI绑卡充值教程：教你快速绑卡充值</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner">
+            Copyright © 2023 OpenAI GPT Guide
+        </div>
+    </div>
+
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@6.0.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+
+
+
+
+<script src="/dist/build.js?1654266144177.js"></script>
+
+
+<script src="/dist/custom.js?1654266144177.js"></script>
+
+
+
+<!-- 百度链接提交 -->
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+
+
+
+
+
+
+
+
+
+<!-- Baidu Analytics-->
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c0c50615900dcfda8b240f97103fcfee";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+</body>
+
+</html>
