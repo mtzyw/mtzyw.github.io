@@ -2,7 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://openaigptguide.com/what-is-chatgpt/</loc>
+    
+    <lastmod>2023-11-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://openaigptguide.com/chatgpt-error/</loc>
+    
+    <lastmod>2023-11-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://openaigptguide.com/openai-chatgpt-app-download/</loc>
     
     <lastmod>2023-11-24</lastmod>
     
@@ -20,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://openaigptguide.com/what-is-chatgpt/</loc>
+    <loc>https://openaigptguide.com/chatgpt-download/</loc>
     
     <lastmod>2023-11-24</lastmod>
     
@@ -66,15 +84,6 @@
   
   <url>
     <loc>https://openaigptguide.com/chatgpt-official-site/</loc>
-    
-    <lastmod>2023-11-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://openaigptguide.com/chatgpt-download/</loc>
     
     <lastmod>2023-11-24</lastmod>
     
@@ -174,15 +183,6 @@
   
   <url>
     <loc>https://openaigptguide.com/openai-api-key-purchase/</loc>
-    
-    <lastmod>2023-11-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://openaigptguide.com/openai-chatgpt-app-download/</loc>
     
     <lastmod>2023-11-22</lastmod>
     
@@ -706,13 +706,6 @@
   
   <url>
     <loc>https://openaigptguide.com/categories/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2023-11-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://openaigptguide.com/categories/%E5%92%A8%E8%AE%AF/</loc>
     <lastmod>2023-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
