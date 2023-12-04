@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>ChatGPT本地化部署教程：简单好用！ | OpenAI &amp; GPT 中文指南</title>
+
+    <meta name="description" content="&lt;p&gt;ChatGPT本地化部署，是将基于深度学习技术的ChatGPT模型，在本地进行部署，包括安装依赖库、下载预训练模型和配置模型参数等步骤，以获得更高的灵活性和安全性，避免对第三方服务的依赖。其中，包括了基本的软硬环境依赖、底层的LLM模型、中间的基础框架及最上层的展示组件等部署所需的要素。&lt;/p&gt;">
+    <link rel="canonical" href="https://openaigptguide.com/chatgpt-local-deployment/"/>
+    <meta name="keywords" content="OpenAI,GPT,GPT-4,GPTs,GPT4">
+
+
+    
+
+    <meta property="og:locale" content="cn" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content= "ChatGPT本地化部署教程：简单好用！ | OpenAI &amp; GPT 中文指南"  />
+    <meta property="og:description" content= "&lt;p&gt;ChatGPT本地化部署，是将基于深度学习技术的ChatGPT模型，在本地进行部署，包括安装依赖库、下载预训练模型和配置模型参数等步骤，以获得更高的灵活性和安全性，避免对第三方服务的依赖。其中，包括了基本的软硬环境依赖、底层的LLM模型、中间的基础框架及最上层的展示组件等部署所需的要素。&lt;/p&gt;" />
+    <meta property="og:url" content="https://openaigptguide.com/chatgpt-local-deployment/index.html" />
+    <meta property="og:site_name" content="" />
+    <meta property="article:author" content="John Doe" />
+    <meta property="article:publisher" content="" />
+    <meta property="og:description" content="&lt;p&gt;ChatGPT本地化部署，是将基于深度学习技术的ChatGPT模型，在本地进行部署，包括安装依赖库、下载预训练模型和配置模型参数等步骤，以获得更高的灵活性和安全性，避免对第三方服务的依赖。其中，包括了基本的软硬环境依赖、底层的LLM模型、中间的基础框架及最上层的展示组件等部署所需的要素。&lt;/p&gt;" />
+    <meta name="twitter:title" content="ChatGPT本地化部署教程：简单好用！ | OpenAI &amp; GPT 中文指南"/>
+    <meta name="twitter:description" content="&lt;p&gt;ChatGPT本地化部署，是将基于深度学习技术的ChatGPT模型，在本地进行部署，包括安装依赖库、下载预训练模型和配置模型参数等步骤，以获得更高的灵活性和安全性，避免对第三方服务的依赖。其中，包括了基本的软硬环境依赖、底层的LLM模型、中间的基础框架及最上层的展示组件等部署所需的要素。&lt;/p&gt;"/>
+    <script type="application/ld+json">
+        {
+            "description": "&lt;p&gt;ChatGPT本地化部署，是将基于深度学习技术的ChatGPT模型，在本地进行部署，包括安装依赖库、下载预训练模型和配置模型参数等步骤，以获得更高的灵活性和安全性，避免对第三方服务的依赖。其中，包括了基本的软硬环境依赖、底层的LLM模型、中间的基础框架及最上层的展示组件等部署所需的要素。&lt;/p&gt;",
+            "author": { "@type": "Person", "name": "John Doe" },
+            "@type": "BlogPosting",
+            "url": "https://openaigptguide.com/chatgpt-local-deployment/index.html",
+            "publisher": {
+            "@type": "Organization",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://openaigptguide.comhttps://openaigptguide.com/images/openai-gpt-guide.png"
+            },
+            "name": "John Doe"
+            },
+            "headline": "ChatGPT本地化部署教程：简单好用！ | OpenAI &amp; GPT 中文指南",
+            "datePublished": "2023-12-04T03:41:15.000Z",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://openaigptguide.com/chatgpt-local-deployment/index.html"
+            },
+            "@context": "http://schema.org"
+        }
+    </script>
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=1654266144177.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=1654266144177.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = true
+        window.aomori_search_algolia = false
+
+    </script>
+
+    <!-- Google 广告 AdSense 代码 -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3672455877501055" crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=65618504368e05001943aef9&product=inline-share-buttons&source=platform" async="async"></script>
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-avatar avatar avatar-sm">
+                <img src="https://openaigptguide.com/images/openai-gpt-guide.png" alt="John Doe">
+            </div>
+            
+            <div class="header-type-inner">
+                
+                    <div id="typed-strings" style="display:none">
+                        <p>OpenAI &amp; GPT 中文指南</p>
+                    </div>
+                    <a class="header-type-title" id="typed" href="/"></a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">首页</a>
+                
+                <a href="/archives">存档</a>
+                
+                <a href="/about">关于</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">首页</a>
+                    
+                    <a href="/archives">存档</a>
+                    
+                    <a href="/about">关于</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    
+<style type="text/css">
+  #st-1 .st-btn > svg {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: -8px;
+    vertical-align: top;
+  }
+  #st-1 .st-btn > img {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: -8px;
+    vertical-align: top;
+  }
+</style>
+
+<article id="post-clpqgvqla0009ms3s6epy18j1" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      ChatGPT本地化部署教程：简单好用！
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2023-12-04T03:41:15.000Z" itemprop="datePublished">2023-12-04</time>
+</div>
+
+            
+            <div class="article-category">
+                <a class="article-category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+            </div>
+            
+
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ChatGPT/" rel="tag">ChatGPT</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ChatGPT%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2/" rel="tag">ChatGPT本地部署</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ChatGPT%E9%83%A8%E7%BD%B2/" rel="tag">ChatGPT部署</a></li></ul>
+            </div>
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+
+
+
+        <div class="sharethis-inline-share-buttons"></div>
+
+       
+       <br/>
+
+
+        <a target="_blank" style="color:blue" rel="noopener" href="http://aa.nsjiasu.com/details/2D1BB2BC">🔥🔥 点击领取海外原装 ChatGPT 正版账号：http://aa.nsjiasu.com/details/2D1BB2BC</a>
+
+            <p>ChatGPT本地化部署，是将基于深度学习技术的ChatGPT模型，在本地进行部署，包括安装依赖库、下载预训练模型和配置模型参数等步骤，以获得更高的灵活性和安全性，避免对第三方服务的依赖。其中，包括了基本的软硬环境依赖、底层的LLM模型、中间的基础框架及最上层的展示组件等部署所需的要素。</p>
+<span id="more"></span>
+
+<p><img src="https://images.unsplash.com/photo-1603468620905-8de7d86b781e?q=80&w=3876&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==" alt="ChatGPT本地部署"></p>
+<p>例如，本地部署ChatGPT服务可以在智能客服、社交网络等领域中发挥重要作用，并帮助企业降低成本，提高效率，推动数智化转型升级。在部署过程中，安全和私密性尤为重要，采用数据标注+强化学习的方法，能够确保模型的性能。同时，支持多种形式的数据安全审计，以确保用户数据的安全性。</p>
+<h2 id="ChatGPT是什么？"><a href="#ChatGPT是什么？" class="headerlink" title="ChatGPT是什么？"></a>ChatGPT是什么？</h2><p>ChatGPT是一种人工智能语言模型，由美国OpenAI公司推出，主要基于GPT-35架构，采用强化学习进行训练。ChatGPT可以实现自然的上下文互动，实现口语化的表达，帮助人们实现更为复杂的语言任务。ChatGPT使用户的对话更加流畅，它的出现无疑将会对社会产生深远影响。ChatGPT不仅能够生成文本，还可以处理口语化的表达，理解真实对话中的歧义和多义词汇。除了文本生成，ChatGPT还能够实现自动问答功能，帮助用户解决问题，比如在教学中，ChatGPT可以辅助教师解决传统教学方法难以解决的问题。此外，ChatGPT也可以用于自动文本生成等功能。ChatGPT市场表现火爆，已得到如谷歌、微软、百度等国内外多家巨头的支持。</p>
+<h2 id="ChatGPT本地部署环境准备"><a href="#ChatGPT本地部署环境准备" class="headerlink" title="ChatGPT本地部署环境准备"></a>ChatGPT本地部署环境准备</h2><p>ChatGPT是一种基于Transformer架构的生成式预训练模型，通过大规模的文本数据进行预训练，具有出色的语言理解和生成能力。在本地部署ChatGPT服务时，首先需要准备环境，主要包括以下步骤：</p>
+<ol>
+<li><p>安装依赖库：ChatGPT需要依赖一些特定的库，如TensorFlow、NumPy、Pandas等。这些库可以通过安装Python包来实现。</p>
+</li>
+<li><p>下载预训练模型：安装完成依赖库后，可以从官方网站下载ChatGPT预训练模型，例如GPT-2和GPT-3。这是一个压缩文件，可以将其解压到本地硬盘中。</p>
+</li>
+<li><p>编写服务代码：服务代码是实现ChatGPT服务的关键。首先，代码需要接收用户的输入，调用ChatGPT模型生成回答，并将回答返回给用户。在编写代码时，需要将ChatGPT模型路径设置为本地路径。</p>
+</li>
+<li><p>测试服务：编写完成服务代码后，需要进行测试，以确保ChatGPT服务能够正常工作。可以使用TestClient来测试服务，检查ChatGPT服务是否能正确识别输入文本并生成正确的回答。</p>
+</li>
+<li><p>部署服务：如果测试通过，可以将服务部署到服务器上，以便用户可以访问。在部署过程中，需要考虑负载均衡和容错机制等问题。</p>
+</li>
+</ol>
+<p>综上所述，ChatGPT本地部署环境准备主要包括安装依赖库、下载预训练模型、编写服务代码、测试服务和部署服务等步骤。这些步骤都需要严格按照规范进行，才能保证ChatGPT服务的可靠性和稳定性。</p>
+<h2 id="下载-ChatGPT-模型"><a href="#下载-ChatGPT-模型" class="headerlink" title="下载 ChatGPT 模型"></a>下载 ChatGPT 模型</h2><p>ChatGPT 模型是由 OpenAI 公司训练的人工智能聊天机器人，下载这个模型涉及侵权行为，并且可能违反 OpenAI 的使用规定。如果您需要使用 ChatGPT 模型，可以通过其 API 进行调用，并在遵循使用准则和保持合适的交互和行为的前提下使用。在使用过程中，您需要定义输入和获取输出，控制回答长度，并校验和编辑回答，请注意遵循使用准则和保持合适的交互和行为。</p>
+<h2 id="创建交互环境"><a href="#创建交互环境" class="headerlink" title="创建交互环境"></a>创建交互环境</h2><p>ChatGPT 能够创建一个可以与用户进行交互的环境，通过语音对话，回答有关图像的问题，甚至可以生成合成声音和识别图像，例如BeMyEyes等公司已经对其图像识别功能进行了实验。这一交互环境的建立是通过两个独立的模型实现的，其中一个是Whisper，另一个是文本到语音模型。为了保证交互的安全性，OpenAI也意识到了向公众发布这些更新的风险，如滥用和语音欺诈等问题。因此，用户需要遵循一定的步骤才能与ChatGPT互动，首先需要向OpenAI注册账号并获取API密钥，然后安装相应的Python库。在实际操作过程中，用户需要先想好问题，然后发出问题，ChatGPT就会进行回答，并且可以根据用户的反馈来优化模型性能。</p>
+<p>ChatGPT创建交互环境的步骤如下：</p>
+<ol>
+<li><p>创建一个新的代码文件，使用Java编程语言编写相应的ChatGPT对象创建和初始化代码，该对象用来创建和初始化ChatGPT。</p>
+</li>
+<li><p>使用API密钥对ChatGPT进行验证，确保ChatGPT能够正常运行。</p>
+</li>
+<li><p>通过不断追加用户输入和获取响应来保持情景交互，这将构建出一个更加智能和具有上下文感知能力的对话系统。</p>
+</li>
+<li><p>使用高级设置调用外部接口，例如接入zapier等平台。</p>
+</li>
+<li><p>创建以awesome-java仓库为基础的知识库问答GPT，可以通过上传文本、文档等资料来调整GPT内容。</p>
+</li>
+<li><p>针对特定任务，例如实现智能对话生成和情景交互，可以结合自定义资料库文件和联网检索功能，优化模型，提高对话生成的质量和自然度。</p>
+</li>
+<li><p>在预训练阶段，模型会通过大量的未标注文本数据来自动学习语言的结构和规律。</p>
+</li>
+<li><p>在监督微调阶段，使用有标签的数据集来提高ChatGPT的性能，进一步优化模型以满足特定任务的要求。</p>
+</li>
+<li><p>最后，使用Docker部署ChatGPT Web服务，搭建ChatGPT服务，就可以在Web环境中实现ChatGPT的交互环境了。</p>
+</li>
+</ol>
+<h2 id="测试和优化"><a href="#测试和优化" class="headerlink" title="测试和优化"></a>测试和优化</h2><p>在ChatGPT的测试和优化过程中，我们需要考虑以下几个方面：</p>
+<ol>
+<li><p>测试环境的搭建：ChatGPT的测试环境应该是一个独立的环境，与生产环境隔离开来。测试计划应该包括测试目标和范围、测试策略和方法、测试资源和进度、缺陷管理计划和发布计划等内容，以确保测试数据的一致性、完整性、合法性和随机性等方面的考虑。</p>
+</li>
+<li><p>测试用例的设计：测试用例的设计需要根据测试目标和覆盖范围确定测试的重点和主要风险，确保ChatGPT能够准确地回答和生成正确的文本内容。</p>
+</li>
+<li><p>测试数据的准备：需要根据需求文档和设计文档确定测试数据的类型和数量，确保测试数据能够准确反映ChatGPT的性能和表现。</p>
+</li>
+<li><p>缺陷管理：缺陷管理需要与其他测试活动紧密结合，并遵循相应的规范和流程。</p>
+</li>
+<li><p>测试报告的编写：测试报告需要提供详细的测试结果、缺陷和优化建议，为后期的优化提供依据。</p>
+</li>
+<li><p>优化方法的采用：在优化过程中，我们可以采用提供fewshot标准提示、使用思维链提示以及提供不同类型的实例的方法，以更好地控制ChatGPT的行为，提高其效果。</p>
+</li>
+</ol>
+<h2 id="ChatGPT本地部署替代方案"><a href="#ChatGPT本地部署替代方案" class="headerlink" title="ChatGPT本地部署替代方案"></a>ChatGPT本地部署替代方案</h2><p>ChatGPT是AI聊天机器人领域的领导者，可以用于聊天机器人、写作软件、内容生成等，但由于用户数量过多，可能无法立即使用。在这里，我将介绍几种可用于ChatGPT本地部署的替代方案，包括：</p>
+<ol>
+<li><p>BingAI：由微软推出的AI聊天工具，可以帮助用户编写代码，并回答问题。</p>
+</li>
+<li><p>ChatSonic：一款具有特定特性和功能的免费聊天机器人工具，适合那些买不起昂贵付费模式的人。</p>
+</li>
+<li><p>Vicuna：一个性能相当于90%ChatGPT的聊天机器人，可用于与GPT-4进行竞争，费用约为300美元。</p>
+</li>
+<li><p>Replika：一个可替代ChatGPT的AI平台，主要用于创建内容。</p>
+</li>
+<li><p>GoogleBard：Google推出的AI聊天工具，可以帮助用户编写代码。</p>
+</li>
+<li><p>GitHubCopilot：一个可以帮助程序员专注于问题或构建系统的AI助手。</p>
+</li>
+<li><p>Jasper：一个主要用于创建内容的AI平台。</p>
+</li>
+<li><p>WriteSonic：一个可以免费开始使用的AI写作工具，但其中文水平不咋地，处理英文的能力要比中文好。</p>
+</li>
+<li><p>OpenAIPlayground：是OpenAI推出的一个免费工具，可以用于测试和开发人工智能技术。</p>
+</li>
+</ol>
+<p>这些替代方案各有特点和优势，用户可以根据自己的需求选择使用。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>ChatGPT本地化部署教程：简单好用！</p>
+<p>首先，需要安装好Python和PyTorch这两个必要的依赖库，并下载预训练模型。这一步非常关键，因为只有预训练模型加载成功，我们才能接下来的操作。</p>
+<p>接着，我们需要准备好服务器环境，并在服务器上安装好必要的依赖库。这些环境包括Linux、MacOS或Windows系统，具体操作可以参考本文提供的环境准备工作。</p>
+<p>接下来，我们需要使用Python的Flask框架和subprocess库来创建一个ChatGPT风格的网页，用户可以在网页上输入提示词并调用shell命令。其中，服务代码使用PyTorch和transformers库加载预训练模型，并定义一个generate_response函数来生成回答。</p>
+<p>然后，我们需要进行服务部署。请注意，ChatGPT默认模型是gpt-35-turbo，但也支持gpt-40，只需修改modeltype参数即可。此外，还需要做好严格的验证以防止安全问题。</p>
+<p>最后，为了提升用户体验，我们可以根据需求来美化页面，并进行个性化定制，如安装第三方库或使用自然语言处理（NLP）技术处理用户输入的提示词。</p>
+<p>基于上述步骤，相信大家一定能顺利完成ChatGPT的本地化部署工作。</p>
+
+        
+        <a target="_blank" style="color:blue" rel="noopener" href="http://aa.nsjiasu.com/details/2D1BB2BC">🔥🔥 点击领取海外原装 ChatGPT 正版账号：http://aa.nsjiasu.com/details/2D1BB2BC</a>
+
+        
+        </div>
+        
+        
+
+    
+
+    
+
+
+    
+
+    
+<nav class="article-nav">
+  
+  
+    <a href="/chatgpt-generate-video/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">上一篇</div>
+      <div class="article-nav-title">如何使用ChatGPT生成视频：AI生成视频指南</div>
+    </a>
+  
+</nav>
+
+
+    <section class="share">
+        <div class="share-title">分享</div>
+        <a class="share-item" target="_blank"
+            href="https://twitter.com/share?text=ChatGPT本地化部署教程：简单好用！ - OpenAI & GPT 中文指南&url=https%3A%2F%2Fopenaigptguide.com%2Fchatgpt-local-deployment%2F">
+            <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a class="share-item" target="_blank"
+            href="https://www.facebook.com/sharer.php?title=ChatGPT本地化部署教程：简单好用！ - OpenAI & GPT 中文指南&u=https%3A%2F%2Fopenaigptguide.com%2Fchatgpt-local-deployment%2F">
+            <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+    </section>
+
+    </div>
+
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-cate">
+    <div class="widget-title"><span>Categories</span></div>
+    <div class="widget-inner">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/OpenAI/">OpenAI</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OpenAI/ChatGPT/">ChatGPT</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/OpenAI/GPT4/">GPT4</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/OpenAI/GPT5/">GPT5</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%B5%84%E8%AE%AF/">资讯</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-tags">
+    <div class="widget-title"><span>Tags</span></div>
+    <div class="widget-inner">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AIGC/" rel="tag">AIGC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI%E5%A4%A7%E6%A8%A1%E5%9E%8B/" rel="tag">AI大模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bing-Chat/" rel="tag">Bing Chat</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT/" rel="tag">ChatGPT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT-APP/" rel="tag">ChatGPT APP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT-Android/" rel="tag">ChatGPT Android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT-App/" rel="tag">ChatGPT App</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT-IOS/" rel="tag">ChatGPT IOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT-mac/" rel="tag">ChatGPT mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT-mac%E7%89%88/" rel="tag">ChatGPT mac版</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E4%B8%8B%E8%BD%BD/" rel="tag">ChatGPT下载</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E4%B8%AD%E6%96%87/" rel="tag">ChatGPT中文</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E4%B8%AD%E6%96%87%E5%AE%98%E7%BD%91/" rel="tag">ChatGPT中文官网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E4%BB%8B%E7%BB%8D/" rel="tag">ChatGPT介绍</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E4%BD%BF%E7%94%A8/" rel="tag">ChatGPT使用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E5%85%8D%E8%B4%B9/" rel="tag">ChatGPT免费</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E5%86%99%E4%BB%A3%E7%A0%81/" rel="tag">ChatGPT写代码</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E5%86%99%E5%B0%8F%E8%AF%B4/" rel="tag">ChatGPT写小说</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E5%86%99%E8%AE%BA%E6%96%87/" rel="tag">ChatGPT写论文</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E5%8A%9F%E8%83%BD/" rel="tag">ChatGPT功能</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E5%8E%9F%E7%90%86/" rel="tag">ChatGPT原理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E5%9C%B0%E5%9D%80/" rel="tag">ChatGPT地址</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E5%A4%A7%E6%A8%A1%E5%9E%8B/" rel="tag">ChatGPT大模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E5%AE%89%E5%8D%93%E7%89%88/" rel="tag">ChatGPT安卓版</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E5%AE%89%E8%A3%85/" rel="tag">ChatGPT安装</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E5%AE%98%E7%BD%91/" rel="tag">ChatGPT官网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E5%AF%86%E7%A0%81%E4%BF%AE%E6%94%B9/" rel="tag">ChatGPT密码修改</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E5%AF%B9%E8%AF%9D/" rel="tag">ChatGPT对话</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E5%B7%A5%E5%85%B7/" rel="tag">ChatGPT工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E5%B9%B3%E6%9B%BF/" rel="tag">ChatGPT平替</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E5%BA%94%E7%94%A8/" rel="tag">ChatGPT应用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/" rel="tag">ChatGPT应用场景</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E5%BC%80%E5%8F%91/" rel="tag">ChatGPT开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E5%BC%80%E6%BA%90/" rel="tag">ChatGPT开源</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E6%89%8B%E6%9C%BA%E7%89%88/" rel="tag">ChatGPT手机版</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E6%89%93%E4%B8%8D%E5%BC%80/" rel="tag">ChatGPT打不开</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E6%8E%A5%E5%8F%A3/" rel="tag">ChatGPT接口</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E6%8E%A5%E7%A0%81%E5%B9%B3%E5%8F%B0/" rel="tag">ChatGPT接码平台</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E6%8F%92%E4%BB%B6/" rel="tag">ChatGPT插件</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E6%90%AD%E5%BB%BA/" rel="tag">ChatGPT搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E6%94%B6%E8%B4%B9/" rel="tag">ChatGPT收费</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E6%9C%8D%E5%8A%A1%E5%99%A8/" rel="tag">ChatGPT服务器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2/" rel="tag">ChatGPT本地部署</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E6%9C%BA%E5%99%A8%E4%BA%BA/" rel="tag">ChatGPT机器人</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E6%9F%A5%E9%87%8D/" rel="tag">ChatGPT查重</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E6%A6%82%E5%BF%B5%E8%82%A1/" rel="tag">ChatGPT概念股</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E6%A8%A1%E5%9E%8B/" rel="tag">ChatGPT模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E6%B3%A8%E5%86%8C/" rel="tag">ChatGPT注册</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E6%B6%A6%E8%89%B2/" rel="tag">ChatGPT润色</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E6%BA%90%E7%A0%81/" rel="tag">ChatGPT源码</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E7%94%9F%E6%88%90%E8%A7%86%E9%A2%91/" rel="tag">ChatGPT生成视频</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E7%99%BB%E5%BD%95/" rel="tag">ChatGPT登录</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E7%AE%97%E6%B3%95/" rel="tag">ChatGPT算法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E7%BB%98%E5%9B%BE/" rel="tag">ChatGPT绘图</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E7%BB%98%E7%94%BB/" rel="tag">ChatGPT绘画</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E7%BC%96%E7%A8%8B/" rel="tag">ChatGPT编程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E7%BF%BB%E8%AF%91/" rel="tag">ChatGPT翻译</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/" rel="tag">ChatGPT聊天机器人</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E8%81%94%E7%BD%91/" rel="tag">ChatGPT联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E8%82%A1%E7%A5%A8/" rel="tag">ChatGPT股票</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E8%8B%B9%E6%9E%9C%E7%89%88/" rel="tag">ChatGPT苹果版</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E8%AE%AD%E7%BB%83/" rel="tag">ChatGPT训练</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E8%AE%BA%E6%96%87/" rel="tag">ChatGPT论文</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E8%AE%BF%E9%97%AE/" rel="tag">ChatGPT访问</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E8%AF%AD%E9%9F%B3/" rel="tag">ChatGPT语音</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E8%AF%AD%E9%9F%B3%E5%AF%B9%E8%AF%9D/" rel="tag">ChatGPT语音对话</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E8%B4%A6%E5%8F%B7/" rel="tag">ChatGPT账号</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E9%80%89%E8%82%A1/" rel="tag">ChatGPT选股</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E9%82%AE%E7%AE%B1/" rel="tag">ChatGPT邮箱</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E9%83%A8%E7%BD%B2/" rel="tag">ChatGPT部署</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E9%93%BE%E6%8E%A5/" rel="tag">ChatGPT链接</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT%E9%95%9C%E5%83%8F/" rel="tag">ChatGPT镜像</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Grok-AI/" rel="tag">Grok AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/New-Bing/" rel="tag">New Bing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI/" rel="tag">OpenAI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI-API/" rel="tag">OpenAI API</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI-API-Key/" rel="tag">OpenAI API Key</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI-API-Key%E5%85%85%E5%80%BC/" rel="tag">OpenAI API Key充值</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI-API-Key%E8%B4%AD%E4%B9%B0/" rel="tag">OpenAI API Key购买</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI-API-OpenAI-API%E4%BD%BF%E7%94%A8/" rel="tag">OpenAI API, OpenAI API使用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI-API%E4%BD%BF%E7%94%A8/" rel="tag">OpenAI API使用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI-Translator/" rel="tag">OpenAI Translator</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E4%B8%8B%E8%BD%BD/" rel="tag">OpenAI下载</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E4%BB%8B%E7%BB%8D/" rel="tag">OpenAI介绍</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E4%BB%B7%E6%A0%BC/" rel="tag">OpenAI价格</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E5%85%85%E5%80%BC/" rel="tag">OpenAI充值</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E5%88%9B%E5%A7%8B%E4%BA%BA/" rel="tag">OpenAI创始人</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E5%AE%98%E7%BD%91/" rel="tag">OpenAI官网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E5%AE%A2%E6%88%B7%E7%AB%AF/" rel="tag">OpenAI客户端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E5%AF%86%E7%A0%81%E4%BF%AE%E6%94%B9/" rel="tag">OpenAI密码修改</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E5%B7%A5%E5%85%B7/" rel="tag">OpenAI工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E6%89%8B%E6%9C%BA%E7%89%88/" rel="tag">OpenAI手机版</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E6%B3%A8%E5%86%8C/" rel="tag">OpenAI注册</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E7%94%BB%E5%9B%BE/" rel="tag">OpenAI画图</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E7%99%BB%E5%BD%95/" rel="tag">OpenAI登录</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E7%BB%91%E5%8D%A1/" rel="tag">OpenAI绑卡</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E7%BB%98%E5%9B%BE/" rel="tag">OpenAI绘图</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E7%BF%BB%E8%AF%91/" rel="tag">OpenAI翻译</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E7%BF%BB%E8%AF%91%E5%B7%A5%E5%85%B7/" rel="tag">OpenAI翻译工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E8%AE%BF%E9%97%AE/" rel="tag">OpenAI访问</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E8%B4%A6%E5%8F%B7/" rel="tag">OpenAI账号</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E8%B4%AD%E4%B9%B0/" rel="tag">OpenAI购买</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenAI%E9%95%9C%E5%83%8F/" rel="tag">OpenAI镜像</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" rel="tag">人工智能</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%B1%E4%BA%AB/" rel="tag">共享</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/" rel="tag">大语言模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AF%86%E9%92%A5/" rel="tag">密钥</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%85%E5%BA%94ChatGPT/" rel="tag">必应ChatGPT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B4%A6%E5%8F%B7/" rel="tag">账号</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B5%84%E8%AE%AF/" rel="tag">资讯</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Featured Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/chatgpt-local-deployment/">ChatGPT本地化部署教程：简单好用！</a>
+          </li>
+        
+          <li>
+            <a href="/chatgpt-generate-video/">如何使用ChatGPT生成视频：AI生成视频指南</a>
+          </li>
+        
+          <li>
+            <a href="/chatgpt-large-model/">ChatGPT爆火，ChatGPT AI大模型是啥？国内大模型有哪些？</a>
+          </li>
+        
+          <li>
+            <a href="/chatgpt-programming/">ChatGPT编程水平如何？利用ChatGPT写代码的详细教程</a>
+          </li>
+        
+          <li>
+            <a href="/chatgpt-deployment/">ChatGPT部署到服务器怎么部署？零基础小白教程！</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner">
+            Copyright © 2023 OpenAI GPT Guide
+        </div>
+    </div>
+
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@6.0.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+
+
+
+
+<script src="/dist/build.js?1654266144177.js"></script>
+
+
+<script src="/dist/custom.js?1654266144177.js"></script>
+
+
+
+<!-- 百度链接提交 -->
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+
+
+
+
+
+
+
+
+
+<!-- Baidu Analytics-->
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c0c50615900dcfda8b240f97103fcfee";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+</body>
+
+</html>
