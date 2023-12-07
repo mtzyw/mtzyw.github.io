@@ -1,3 +1,4 @@
+https://openaigptguide.com/google-gemini/
 https://openaigptguide.com/chatgpt-apply/
 https://openaigptguide.com/chatgpt-server/
 https://openaigptguide.com/chatgpt-technology/
@@ -223,6 +224,7 @@ https://openaigptguide.com/tags/ChatGPT%E9%97%AE%E7%AD%94/
 https://openaigptguide.com/tags/ChatGPT%E9%A2%84%E6%B5%8B%E8%82%A1%E7%A5%A8/
 https://openaigptguide.com/tags/ChatGPT%E9%A2%84%E6%B5%8B/
 https://openaigptguide.com/tags/ChatGPT%E6%8A%80%E6%9C%AF/
+https://openaigptguide.com/tags/Gemini/
 https://openaigptguide.com/categories/OpenAI/
 https://openaigptguide.com/categories/OpenAI/GPT4/
 https://openaigptguide.com/categories/OpenAI/ChatGPT/
