@@ -1,3 +1,4 @@
+https://openaigptguide.com/google-gemini-pro/
 https://openaigptguide.com/chatgpt-revise-article/
 https://openaigptguide.com/chatgpt-open-source-replacement/
 https://openaigptguide.com/chatgpt-private-deployment/
@@ -291,6 +292,8 @@ https://openaigptguide.com/tags/ChatGPT%E7%A7%81%E6%9C%89%E5%8C%96%E9%83%A8%E7%B
 https://openaigptguide.com/tags/ChatGPT%E5%AE%9E%E6%B5%8B/
 https://openaigptguide.com/tags/ChatGPT%E5%BC%B1%E6%99%BA%E5%90%A7/
 https://openaigptguide.com/tags/ChatGPT%E6%94%B9%E4%BD%9C%E6%96%87/
+https://openaigptguide.com/tags/Google-Gemini-Pro/
+https://openaigptguide.com/tags/Google-Gemini/
 https://openaigptguide.com/categories/OpenAI/
 https://openaigptguide.com/categories/OpenAI/GPT4/
 https://openaigptguide.com/categories/OpenAI/ChatGPT/

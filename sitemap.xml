@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://openaigptguide.com/google-gemini-pro/</loc>
+    
+    <lastmod>2023-12-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://openaigptguide.com/chatgpt-revise-article/</loc>
     
     <lastmod>2023-12-13</lastmod>
@@ -2303,6 +2312,20 @@
   
   <url>
     <loc>https://openaigptguide.com/tags/ChatGPT%E6%94%B9%E4%BD%9C%E6%96%87/</loc>
+    <lastmod>2023-12-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://openaigptguide.com/tags/Google-Gemini-Pro/</loc>
+    <lastmod>2023-12-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://openaigptguide.com/tags/Google-Gemini/</loc>
     <lastmod>2023-12-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
