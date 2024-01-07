@@ -1,6 +1,6 @@
+https://openaigptguide.com/claude-2/
 https://openaigptguide.com/new-bing-chatgpt/
 https://openaigptguide.com/ai-agent/
-https://openaigptguide.com/claude-2/
 https://openaigptguide.com/chatgpt-analyze-charts/
 https://openaigptguide.com/chatgpt-front-end-code/
 https://openaigptguide.com/chatgpt-lock-ip/
@@ -409,7 +409,6 @@ https://openaigptguide.com/tags/Gemini-Pro-API/
 https://openaigptguide.com/tags/%E8%B0%B7%E6%AD%8CGemini-API/
 https://openaigptguide.com/tags/Gemini-API/
 https://openaigptguide.com/tags/Claude-2/
-https://openaigptguide.com/tags/CHatGPT%E5%B9%B3%E6%9B%BF/
 https://openaigptguide.com/tags/Claude-AI/
 https://openaigptguide.com/tags/Janitor-AI/
 https://openaigptguide.com/tags/AI%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/

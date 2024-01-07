@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://openaigptguide.com/claude-2/</loc>
+    
+    <lastmod>2024-01-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://openaigptguide.com/new-bing-chatgpt/</loc>
     
     <lastmod>2024-01-07</lastmod>
@@ -12,15 +21,6 @@
   
   <url>
     <loc>https://openaigptguide.com/ai-agent/</loc>
-    
-    <lastmod>2024-01-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://openaigptguide.com/claude-2/</loc>
     
     <lastmod>2024-01-07</lastmod>
     
@@ -3233,13 +3233,6 @@
   
   <url>
     <loc>https://openaigptguide.com/tags/Claude-2/</loc>
-    <lastmod>2024-01-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://openaigptguide.com/tags/CHatGPT%E5%B9%B3%E6%9B%BF/</loc>
     <lastmod>2024-01-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
