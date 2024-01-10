@@ -1,3 +1,11 @@
+https://openaigptguide.com/openai-api-error-429/
+https://openaigptguide.com/google-bard-extension/
+https://openaigptguide.com/google-sge/
+https://openaigptguide.com/chatgpt-account-registration/
+https://openaigptguide.com/midjourney-invites-friends/
+https://openaigptguide.com/midjourney-instructions/
+https://openaigptguide.com/midjourney-account/
+https://openaigptguide.com/openai-api-key/
 https://openaigptguide.com/chatgpt-using-guide-for-new-users/
 https://openaigptguide.com/chatgpt-account-generator/
 https://openaigptguide.com/dall-e-3-using-experience/
@@ -468,6 +476,15 @@ https://openaigptguide.com/tags/ChatGPT%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8/
 https://openaigptguide.com/tags/DALL-E-3/
 https://openaigptguide.com/tags/DALL-E-3%E4%BD%BF%E7%94%A8/
 https://openaigptguide.com/tags/DALL-E-2/
+https://openaigptguide.com/tags/ChatGPT-Plus%E8%B4%A6%E5%8F%B7/
+https://openaigptguide.com/tags/Google-Bard%E6%8F%92%E4%BB%B6/
+https://openaigptguide.com/tags/Google-AI/
+https://openaigptguide.com/tags/Midjourney%E8%B4%A6%E5%8F%B7/
+https://openaigptguide.com/tags/%E8%B0%B7%E6%AD%8CSGE/
+https://openaigptguide.com/tags/Google-SGE/
+https://openaigptguide.com/tags/AI%E7%94%BB%E5%9B%BE/
+https://openaigptguide.com/tags/Midjourney%E9%82%80%E8%AF%B7%E5%A5%BD%E5%8F%8B/
+https://openaigptguide.com/tags/OpenAI-API-Error-429/
 https://openaigptguide.com/categories/OpenAI/
 https://openaigptguide.com/categories/OpenAI/GPT4/
 https://openaigptguide.com/categories/OpenAI/ChatGPT/
