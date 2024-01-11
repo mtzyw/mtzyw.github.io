@@ -1,3 +1,4 @@
+https://openaigptguide.com/gpt-store-and-chatgpt-team/
 https://openaigptguide.com/openai-api-error-429/
 https://openaigptguide.com/google-bard-extension/
 https://openaigptguide.com/google-sge/
@@ -485,6 +486,9 @@ https://openaigptguide.com/tags/Google-SGE/
 https://openaigptguide.com/tags/AI%E7%94%BB%E5%9B%BE/
 https://openaigptguide.com/tags/Midjourney%E9%82%80%E8%AF%B7%E5%A5%BD%E5%8F%8B/
 https://openaigptguide.com/tags/OpenAI-API-Error-429/
+https://openaigptguide.com/tags/GPT-Store/
+https://openaigptguide.com/tags/ChatGPT%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97/
+https://openaigptguide.com/tags/ChatGPT-Team/
 https://openaigptguide.com/categories/OpenAI/
 https://openaigptguide.com/categories/OpenAI/GPT4/
 https://openaigptguide.com/categories/OpenAI/ChatGPT/
